@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+   <!--<link rel="script" href="js/cart.js">--> 
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <h2>Donut</h2>
+            <img src="assets/donut.jpg" height="300px" width="300px">
+            <h3>Price: Php 35.00</h3>
+            <button class= "buttonAdd" onclick="addToCart('Donut', 35.00)">Add to Cart</button>
+            <button class= "buttonRem" onclick="removeFromCart('Donut', 35.00)">Remove from Cart</button>
+        </div>
+
+        <div class="product">
+            <h2>Milk 1L</h2>
+            <img src="assets/milk.jpg" height="300px" width="300px">
+            <h3>Price: Php 100.00</h3>
+            <button  class= "buttonAdd" onclick="addToCart('Milk', 35.00)">Add to Cart</button>
+            <button class= "buttonRem" onclick="removeFromCart('Milk', 35.00)">Remove from Cart</button>
+        </div>
+
+        <div>
+        <div id="cart">
+               <h2>Customer's Cart</h2>
+               <ul id="products"></ul> 
+               <div id="subtotal"></div>
+        </div>
+        <script src="js/cart.js"></script>
+    </div>
+</body>
+</html>
